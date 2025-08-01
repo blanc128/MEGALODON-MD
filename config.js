@@ -1,3 +1,4 @@
+
 const { getConfig } = require("./lib/configdb");
 const fs = require('fs');
 const path = require('path');
@@ -13,9 +14,9 @@ module.exports = {
     CHATBOT: getConfig("CHATBOT") || "on",
     //chatbot on/off
   
-    SESSION_ID: process.env.SESSION_ID || "MEGALODON~MD~71Jgja6R#fpeXsf305wLJi7G-ITbhr3xrtxNImzSd2TQm_o1lRxo"// Your bot's session ID (keep it secure)
-    PREFIX: getConfig("PREFIX") || '.';,  // Command prefix (e.g., "., / ! * - +")
-    BOT_NAME: process.env.BOT_NAME || getConfig("BOT_NAME") || "( -_･)nik",  // Bot's display name
+    SESSION_ID: process.env.SESSION_ID || "MEGALODON~MD~71Jgja6R#fpeXsf305wLJi7G-ITbhr3xrtxNImzSd2TQm_o1lRxo",  // Your bot's session ID (keep it secure)
+    PREFIX: getConfig("PREFIX") || ".",  // Command prefix (e.g., "., / ! * - +")
+    BOT_NAME: process.env.BOT_NAME || getConfig("BOT_NAME") || "MEGALODON-MD",  // Bot's display name
     MODE: process.env.MODE || "private",        // Bot mode: public/private/group/inbox
     // ===== OWNER & DEVELOPER SETTINGS =====
     OWNER_NUMBER: process.env.OWNER_NUMBER || "50941964977",  // Owner's WhatsApp number
@@ -27,14 +28,14 @@ module.exports = {
     // ===== AUTO-RESPONSE SETTINGS =====
     
     AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "false",// Reply to status updates?
-    AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*( -_･)nik BOT VIEWED YOUR STATUS 🤖*",  // Status reply message
+    AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*MEGALODON BOT VIEWED YOUR STATUS 🤖*",  // Status reply message
     READ_MESSAGE: process.env.READ_MESSAGE || "false",          // Mark messages as read automatically?
 
     // ===== REACTION & STICKER SETTINGS =====
     AUTO_REACT: process.env.AUTO_REACT || "false",              // Auto-react to messages?
     CUSTOM_REACT: process.env.CUSTOM_REACT || "false",          // Use custom emoji reactions?
     CUSTOM_REACT_EMOJIS: process.env.CUSTOM_REACT_EMOJIS || "💝,💖,💗,❤️‍🩹,❤️,🧡,💛,💚,💙,💜,🤎,🖤,🤍",  // Custom reaction emojis
-    STICKER_NAME: process.env.STICKER_NAME || "( -_･)nik-MD",     // Sticker pack name
+    STICKER_NAME: process.env.STICKER_NAME || "MEGALODON-MD",     // Sticker pack name
 
     
     // ===== MEDIA & AUTOMATION =====
@@ -68,7 +69,7 @@ module.exports = {
 
     // ===== BOT BEHAVIOR & APPEARANCE =====
    
-    PUBLIC_MODE: process.env.PUBLIC_MODE || "true",     
+    PUBLIC_MODE: process.env.PUBLIC_MODE || "false",     
     // Allow public commands?
     ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "false",
     // Show bot as always online?
